@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/back">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="114dp"
+        android:layout_height="161dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logoo"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_marginTop="30dp"
+        android:layout_width="312dp"
+        android:layout_height="229dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bachighlight"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#8FFFFFFF"
+            android:hint="     Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColorHint="#99000000"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:singleLine="true">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#8FFFFFFF"
+            android:hint="     Password"
+            android:drawableLeft="@drawable/lockicon"
+            android:textColorHint="#99000000"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password ?"
+        android:textStyle="normal"
+        android:textSize="10dp"
+        android:textColor="#ffff"
+        android:layout_below="@id/lay"
+        android:layout_centerHorizontal="true"
+        style="?borderlessButtonStyle"
+        />
+    <LinearLayout
+
+        android:id="@+id/lay2"
+        android:layout_below="@id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Masuk" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay2"
+        android:layout_centerHorizontal="true"
+        android:text="Belum Punya Akun?"
+        android:textStyle="normal"
+        android:textSize="10dp"
+        android:textColor="#ffff"
+        style="?borderlessButtonStyle"/>
+
+</RelativeLayout>

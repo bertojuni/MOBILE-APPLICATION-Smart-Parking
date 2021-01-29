@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatAkun"
+    android:background="@color/back">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="34dp"
+        android:layout_width="270dp"
+        android:layout_height="153dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logoo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="3dp"
+        android:text="Sign UP"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="monospace"/>
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bachighlight"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#8FFFFFFF"
+            android:hint="    Email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:textColorHint="#99000000"
+            android:textStyle="bold"
+            android:inputType="text"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#8FFFFFFF"
+            android:hint="     Password"
+            android:drawableLeft="@drawable/lockicon"
+            android:textColorHint="#99000000"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="238dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#8FFFFFFF"
+            android:hint="     Re-Password"
+            android:drawableLeft="@drawable/lockicon"
+            android:textColorHint="#99000000"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/lay2"
+        android:layout_below="@id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Daftar" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_marginStart="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
